@@ -1,0 +1,20 @@
+G:\Mem Mirror\volatility_2.6_win64_standalone>volatility_2.6_win64_standalone.exe -f memdump.mem imageinfo
+Volatility Foundation Volatility Framework 2.6
+INFO    : volatility.debug    : Determining profile based on KDBG search...
+          Suggested Profile(s) : Win7SP1x64, Win7SP0x64, Win2008R2SP0x64, Win2008R2SP1x64_23418, Win2008R2SP1x64, Win7SP1x64_23418
+                     AS Layer1 : WindowsAMD64PagedMemory (Kernel AS)
+                     AS Layer2 : FileAddressSpace (G:\Mem Mirror\volatility_2.6_win64_standalone\memdump.mem)
+                      PAE type : No PAE
+                           DTB : 0x187000L
+                          KDBG : 0xf80002c07110L
+          Number of Processors : 4
+     Image Type (Service Pack) : 1
+                KPCR for CPU 0 : 0xfffff80002c08d00L
+                KPCR for CPU 1 : 0xfffff880009ec000L
+                KPCR for CPU 2 : 0xfffff88001e5e000L
+                KPCR for CPU 3 : 0xfffff88001ed0000L
+             KUSER_SHARED_DATA : 0xfffff78000000000L
+           Image date and time : 2019-01-24 15:07:09 UTC+0000
+     Image local date and time : 2019-01-24 20:37:09 +0530
+----------------------------------------------------------------------------------------------------------------------------------------------
+G:\Mem Mirror\volatility_2.6_win64_standalone>volatility_2.6_win64_standalone.exe -f memdump.mem --profile=Win7SP1x64 pslist
