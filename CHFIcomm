@@ -17,4 +17,6 @@ INFO    : volatility.debug    : Determining profile based on KDBG search...
            Image date and time : 2019-01-24 15:07:09 UTC+0000
      Image local date and time : 2019-01-24 20:37:09 +0530
 ----------------------------------------------------------------------------------------------------------------------------------------------
+REF: https://github.com/volatilityfoundation/volatility/wiki/Command-Reference#dlllist
 G:\Mem Mirror\volatility_2.6_win64_standalone>volatility_2.6_win64_standalone.exe -f memdump.mem --profile=Win7SP1x64 pslist
+
