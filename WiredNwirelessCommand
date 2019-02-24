@@ -1,0 +1,16 @@
+Internet ENABLED & DISABLED (Windows)
+======================================
+C:\Windows\System32\netsh.exe interface set interface "Local Area Connection" DISABLED
+C:\Windows\System32\netsh.exe interface set interface "Local Area Connection" ENABLED
+
+
+WIRELESS KEY DISCOVERY:
+=======================
+airmon-ng start wlan0
+airodump-ng wlan0mon
+airodump-ng -w <filename> -c <channel no> --bssid <BSSID> wlan0mon
+aireplay-ng -0 0 -a <bssid> wlan0mon
+aircrack-ng -w <list> dump-01.cap
+--------------------------------------------------------------
+netsh wlan show profiles <SSID> key=clear
+
