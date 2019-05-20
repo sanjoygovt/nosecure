@@ -1,0 +1,4 @@
+NSLOOKUP:
+sitename > 
+set query=ns > sitename
+set type=hinfo > sitename
